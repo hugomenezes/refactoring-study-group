@@ -5,7 +5,6 @@ function statement (invoice, plays) {
   const format = new Intl.NumberFormat("en-US",
                         { style: "currency", currency: "USD",
                           minimumFractionDigits: 2 }).format;
-  console.log(invoice.performances);
   
   for (let perf of invoice.performances) {
     const play = plays[perf.playID];
