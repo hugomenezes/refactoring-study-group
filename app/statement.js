@@ -1,5 +1,6 @@
 function statement (invoice, plays) {
-    const statementData = {};
+  const statementData = {};
+  statementData.customer = invoice.customer;
   return renderPlainText(statementData, invoice, plays);
 }
 
